@@ -16,7 +16,7 @@ class WelcomeScreen extends StatelessWidget {
                 color: Color.fromARGB(255, 246, 245, 243),
                 image: DecorationImage(
                     image: NetworkImage(
-                        "https://images.unsplash.com/photo-1557683304-673a23048d34?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTJ8fGJsdWUlMjBiYWNrZ3JvdW5kfGVufDB8fDB8fHww&auto=format&fit=crop&w=500&q=60"),
+                        "https://wallpaperaccess.com/full/2041723.jpg"),
                     fit: BoxFit.fill)),
             child: Column(
               children: [
@@ -38,7 +38,7 @@ class WelcomeScreen extends StatelessWidget {
                         style: TextStyle(
                             fontSize: 70,
                             fontWeight: FontWeight.bold,
-                            color: Color.fromARGB(255, 1, 43, 77)),
+                            color: Color.fromARGB(255, 3, 95, 171)),
                       ),
                     ],
                   ),
