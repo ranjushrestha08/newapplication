@@ -18,23 +18,36 @@ class BookingHistory extends StatelessWidget {
               BookingHistoryModel details = bookingHistoryDetails[index];
               return Column(
                 children: [
-                  Container(
-                    height: 50,
-                    width: double.infinity,
-                    decoration: BoxDecoration(
-                        borderRadius: BorderRadius.circular(20),
-                        color: const Color.fromARGB(255, 250, 249, 249)),
-                    child: Row(
-                      children: [
-                        const CircleAvatar(
-                          radius: 40,
-                          backgroundImage: NetworkImage(
-                              "https://www.google.com/url?sa=i&url=https%3A%2F%2Funsplash.com%2Fs%2Fphotos%2Fimage&psig=AOvVaw3yKDGkj-cyXcOR9-dWihCv&ust=1695639543235000&source=images&cd=vfe&ved=0CBAQjRxqFwoTCKCMxdeLw4EDFQAAAAAdAAAAABAE"),
-                        ),
-                        Column(
-                          children: [Text(details.name), Text(details.contact)],
-                        )
-                      ],
+                  Padding(
+                    padding: const EdgeInsets.all(8.0),
+                    child: Container(
+                      height: 60,
+                      width: double.infinity,
+                      decoration: BoxDecoration(
+                          borderRadius: BorderRadius.circular(20),
+                          color: const Color.fromARGB(255, 250, 249, 249)),
+                      child: Row(
+                        children: [
+                          const Padding(
+                            padding: EdgeInsets.all(8.0),
+                            child: CircleAvatar(
+                              radius: 25,
+                              backgroundImage: NetworkImage(
+                                  "https://www.yearindays.com/media/medium/jennie-kim.jpg"),
+                            ),
+                          ),
+                          Padding(
+                            padding: const EdgeInsets.all(8.0),
+                            child: Column(
+                              crossAxisAlignment: CrossAxisAlignment.start,
+                              children: [
+                                Text(details.name),
+                                Text(details.contact)
+                              ],
+                            ),
+                          )
+                        ],
+                      ),
                     ),
                   ),
                 ],

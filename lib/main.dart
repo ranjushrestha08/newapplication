@@ -1,5 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:newapplication/bookingHistory.dart';
+import 'package:newapplication/signinScreen.dart';
+import 'package:newapplication/welcomeScreen.dart';
 
 void main() {
   runApp(const MyApp());
@@ -32,7 +34,7 @@ class MyApp extends StatelessWidget {
         colorScheme: ColorScheme.fromSeed(seedColor: Colors.deepPurple),
         useMaterial3: true,
       ),
-      home: BookingHistory(),
+      home: WelcomeScreen(),
     );
   }
 }
